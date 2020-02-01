@@ -1,0 +1,274 @@
+.homepage {
+  .section-record {
+    margin-top: 12rem;
+
+    &--img {
+      width: 8rem;
+      height: 8rem;
+
+      @include responsive(phone-port) {
+        width: 6rem;
+      }
+    }
+
+    &--amount {
+      font: $font-big;
+    }
+  }
+
+  .section-record__opp {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../../icons/opportunity-small.svg");
+    background-size: 95%;
+    background-position: -54px 0px;
+    background-repeat: no-repeat;
+  }
+
+  .section-record__job {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../../icons/job.svg");
+    background-size: 100%;
+    background-position: -54px 0px;
+    background-repeat: no-repeat;
+  }
+
+  .section-record__sub {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../../icons/sub.svg");
+    background-size: 75%;
+    background-position: -54px 0px;
+    background-repeat: no-repeat;
+  }
+
+  .section-record__dis {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../../icons/distributed.svg");
+    background-size: 90%;
+    background-position: -54px 0px;
+    background-repeat: no-repeat;
+  }
+
+  .section-record__card {
+    flex: 0 0 20%;
+
+    @include responsive(tab-land) {
+      flex: 1 0 40%;
+
+      &:nth-child(2) {
+        margin-right: 0;
+      }
+    }
+
+    @include responsive(phone-port) {
+      flex: 1 0 100%;
+      margin-right: 0 !important;
+    }
+  }
+
+  .section-record__col {
+    justify-content: center;
+  }
+
+  .section-record-content {
+    padding: 2rem;
+
+    p {
+      margin: 3rem auto;
+      font: $font-small;
+      max-width: 15.7rem;
+      height: 5rem;
+
+      @include responsive(tab-land) {
+        height: 2rem;
+      }
+    }
+  }
+
+  .record-header {
+    margin-left: 7rem;
+    margin-bottom: 5rem;
+  }
+
+  .section-risk {
+    margin-top: 12rem;
+  }
+
+  .section-invest {
+    background-color: #FFEFE5;
+    padding: 5rem 7rem 6rem 7rem;
+
+    @include responsive(phone-port) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__box {
+      margin-left: 10rem;
+
+      @include responsive(tab-land) {
+        margin-left: 0;
+      }
+    }
+
+    &--img {
+      max-width: 35rem;
+
+      @include responsive(tab-port) {
+        max-width: 20rem;
+      }
+    }
+
+    &--text {
+      margin-left: 15rem;
+      max-width: 30rem;
+      align-self: center;
+
+      @include responsive(tab-port) {
+        margin-left: 5rem;
+      }
+
+      @include responsive(phone-port) {
+        margin-left: 0;
+        margin-top: 2rem;
+        // max-width: 100%;
+      }
+
+      h1 {
+        font: $font-small-bold;
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .section-invest__grid {
+    @include responsive(phone-port) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  .slider-control-bottomcenter {
+    @include responsive(phone-port) {
+      justify-content: center;
+      margin-top: 3rem;
+      width: 100%;
+      // align-items: center;
+    }
+  }
+
+  .section-services {
+
+    &__icon {
+      width: 100px;
+    }
+
+    &__box {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      padding: 0 10rem;
+      height: 30rem;
+      border-radius: 5px;
+
+      @include responsive(tab-land) {
+        flex: 1 0 20%;
+        height: 25rem;
+        border-radius: 10px;
+      }
+
+      @include responsive(tab-port) {
+        flex: 1 0 10%;
+        padding: 0 2rem;
+      }
+
+      @include responsive(phone-port) {
+          margin-right: 0 !important;
+          justify-content: space-evenly;
+      }
+
+      p {
+        color: #FFFEFC;
+        margin-left: 5rem;
+        font: $font-small-bold;
+
+        @include responsive(tab-port) {
+          margin-left: 2rem;
+        }
+      }
+    }
+
+    &__property {
+      background: linear-gradient(to right, rgba(247, 159, 27, 0.8), rgba(213, 91, 15, 0.9)), url("../../images/Homepage/property.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &__perfection {
+      background: linear-gradient(-44deg, rgba(0, 118, 224, 0.8), rgba(0, 50, 95, 0.9)), url("../../images/Homepage/perfection.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .section-risk {
+    &__heading {
+      margin-left: 7rem;
+
+      @include responsive(phone-port) {
+        margin-left: 0;
+      }
+  }
+
+    &-box {
+      padding: 5rem;
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.07);
+
+      @include responsive(tab-land) {
+        padding: 2rem;
+      }
+
+      @include responsive(tab-port) {
+        flex: 0 0 47%;
+
+        &:nth-child(2) {
+          margin-right: 0;
+        }
+
+        &:nth-child(3) {
+          margin-right: $gutter-horizontal;
+        }
+
+        &:nth-child(4) {
+          margin-right: 0;
+        }
+      }
+
+      @include responsive(phone-port) {
+        flex: 1 0 100%;
+
+        // &:nth-child(2) {
+        //   margin-right: 0;
+        // }
+
+        // &:nth-child(3) {
+        //   margin-right: $gutter-horizontal;
+        // }
+
+        // &:nth-child(4) {
+        //   margin-right: 0;
+        // }
+      }
+      
+      h1 {
+        font: $font-small-bold;
+        margin: 2rem 0;
+      }
+    }
+
+    &--img {
+      width: 50px;
+    }
+  }
+}
+

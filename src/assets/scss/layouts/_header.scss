@@ -1,0 +1,109 @@
+.header {
+  min-height: 100vh;
+  background-color: black;
+  &-home {
+    background: linear-gradient(to right, rgba(0, 31, 58, 0.8), rgba(0, 31, 58, 0.8)), url("../../images/Homepage/HomePage.png");
+    background-size: cover;
+    width: 100%;
+
+    button {
+      display: inline-block;
+    }
+  }
+
+  &-faq {
+    background: linear-gradient(to right, rgba(0, 31, 58, 0.8), rgba(0, 31, 58, 0.8)), url("../../images/FAQ/faq.png");
+    background-size: cover;
+    width: 100%;
+  }
+
+  &-market {
+    background: linear-gradient(to right, rgba(0, 31, 58, 0.8), rgba(0, 31, 58, 0.8)), url("../../images/Market/market.png");
+    background-size: cover;
+    width: 100%;
+
+    button {
+      display: inline-block;
+    }
+  }
+
+  &-about {
+    background: linear-gradient(to right, rgba(0, 31, 58, 0.8), rgba(0, 31, 58, 0.8)), url("../../images/aboutpage/aboutus.png");
+    background-size: cover;
+    width: 100%;
+
+    button {
+      display: inline-block;
+    }
+  }
+ 
+
+  &__content {
+    max-width: 67rem;
+    margin: 0 auto;
+    padding-bottom: 10rem;
+    // position: absolute;
+    // top: 65%;
+    // left: 50%;
+    // transform: translate(-50%, -65%) ;
+  }
+
+  &__content-box {
+    margin-top: 217px;
+    color: #fff;
+  }
+
+  &__img-box {
+    position: absolute;
+    top: 195px;
+    right: 0;
+
+    &--home {
+      position: relative;
+      top: -50rem;
+      right: -600px;
+    }
+  }
+
+  &__img {
+    height: 768px;
+    max-width: 100%;
+
+    &--reduced {
+      height: 509px;
+      max-width: 100%;
+    }
+  }
+}
+
+.header-wrap {
+  padding-left: 14rem;
+  background-image: $bckgd-linear-gradient;
+}
+
+.header__homepage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.header__text {
+  flex: 0 0 50%;
+  margin-top: -15rem;
+  color: #fff;
+
+  &--primary {
+    font: $font-medium-bold;
+    margin-bottom: 4.5rem;
+    color: #fff;
+  }
+  &--secondary {
+    font: $font-tiny;
+    color: #fff;
+  }
+}
+
+.header-imagebox {
+  max-height: 1108px;
+}

@@ -1,0 +1,46 @@
+.section-market {
+  justify-content: space-around;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 15rem;
+  }
+
+  &--img {
+    width: 250px;
+    border-radius: 100px;
+  }
+
+  &-textbox {
+
+    color: $primary-text-color !important;
+  }
+}
+
+.section-market-textbox {
+  &--heading {
+    text-transform: capitalize;
+  }
+
+
+  padding-top: 30px;
+  padding-left: 90px;
+}
+
+.section-market--nigeria {
+  background: url("../../icons/nigeria.svg");
+  background-repeat: no-repeat;
+  background-size: 200px;
+}
+
+.section-market--west {
+  background: url("../../icons/west-africa.svg");
+  background-repeat: no-repeat;
+  background-size: 200px;
+}
+
+.section-market--global {
+  background: url("../../icons/global.svg");
+  background-repeat: no-repeat;
+  background-size: 200px;
+}

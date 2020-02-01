@@ -1,0 +1,24 @@
+.dashboard {
+    // padding: 2rem;
+    background-color: rgba(240, 245, 248, 0.904);
+    max-width: 100%;
+    
+}
+
+.dashboard-box {
+    border-top: 2px solid #eaeaea81;
+    max-width: 100%;
+
+    &__grid {
+        display: flex;
+        // padding-top: 2rem;
+    }
+}
+
+.main-view {
+    flex: 1;
+    margin-top: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    // background-color: hotpink;
+}

@@ -1,0 +1,39 @@
+/*
+    Colors
+*/
+$bckgd-color:                           #fcfefa;
+$primary-white-color:                   #ffffff;
+$primary-text-color:                    #00325f;
+$primary-text-light-color:              #1f1f1f;
+$primary-btn-color:                     #00374d;
+$primary-btn-bckgd:                     #D55B0F;
+$primary-color:                         #D55B0F;
+$primary-dark-color:                    #7E3000;
+$bckgd-linear-gradient:                 linear-gradient(180deg, #3eefff 0%, #fcfff7 100%);
+
+/*
+    Grid
+*/
+$grid-width:                             calc(100% - 120px);
+$grid-width-tab-land:                    calc(100% - 70px);
+$grid-width-phone:                       calc(100% - 30px);
+$grid-full-width:                        100%;
+$gutter-vertical:                        8rem;
+$gutter-horizontal:                      3rem;
+$gutter-horizontal-big:                  9rem;
+$section-gap:                            8rem;
+
+/*
+    Fonts
+*/
+$font-tiny:                             normal 300 1.2rem/2.6rem 'Graphik';
+$font-tiny-semi:                        normal 400 1.2rem/2.6rem 'Graphik';
+$font-tiny-bold:                        normal 500 1.2rem/2.6rem 'Graphik';
+$font-small:                            normal 300 1.6rem/2.6rem 'Graphik';
+$font-small-semi:                       normal 400 1.6rem/2.6rem 'Graphik';
+$font-small-bold:                       normal 500 1.6rem/2.6rem 'Graphik';
+$font-medium:                           normal 300 2.0rem/2.6rem 'Graphik';
+$font-medium-semi:                      normal 400 2.0rem/2.6rem 'Graphik';
+$font-medium-bold:                      normal 500 4.0rem/5.5rem 'Graphik';
+$font-big:                              normal 500 5.0rem/7.0rem 'Graphik';
+$font-custom-heading:                   normal 500 3.0rem/2.6rem 'Graphik';

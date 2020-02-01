@@ -1,0 +1,98 @@
+.login {
+  background: #f6f8fc;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
+
+.login-heading {
+  color: $primary-text-color;
+  // max-width: 60.7rem;
+  margin: 30px auto;
+  margin-top: 20rem;
+  font: $font-custom-heading;
+}
+
+.login-form {
+  max-width: 30%;
+  margin: 0 auto;
+
+  p {
+    font: $font-small;
+    margin-bottom: 40px;
+  }
+
+  &__label {
+    display: block;
+    text-align: left;
+  }
+
+
+  &__input {
+    width: 100%;
+    padding: 1.5rem 1.4rem;
+    border: none;
+    font: $font-tiny-bold;
+    font-size: 1.4rem;
+    outline: none;
+    color: $primary-text-color;
+    border: 2px solid transparent;
+    display: block;
+    border-radius: 5px;
+    transition: all .3s;
+    margin-top: 3rem;
+
+    &::-webkit-input-placeholder {
+      color: #8e8e8e;
+      font: $font-tiny;
+      text-transform: capitalize;
+  }
+
+    &:focus {
+      box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.1);
+      border: 2px solid $primary-btn-color;
+    }
+
+    &:focus:invalid {
+      border: 2px solid $primary-color;
+    }
+
+    &--address {
+      padding-bottom: 8rem;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    width: 100%;
+    min-height: 5rem;
+    margin-top: 3rem;
+    text-transform: uppercase;
+  }
+}
+
+.login-password-reset {
+    margin-top: 3rem;
+    font: $font-tiny-bold;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.login-form__code {
+  position: relative;
+}
+
+.login-form__label {
+  width: 100%;
+  text-align: left;
+}
+
+.login-form-box {
+  display: block;
+  flex: 1;
+}
+
+.login-grid {
+  align-items: baseline;
+  margin-bottom: 0 !important;
+}

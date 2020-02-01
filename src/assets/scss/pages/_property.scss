@@ -1,0 +1,218 @@
+.property-top {
+  display: flex;
+  align-items: flex-start;
+}
+
+.property-img {
+  flex: 0 0 60%;
+
+  img {
+    width: 70%;
+    height: auto;
+  }
+}
+
+.property-invest__btn {
+  display: block;
+  width: 20rem;
+  padding: 0.5rem 2rem;
+  margin-bottom: 3rem;
+  background-color: #d55b0f;
+  color: #fff;
+  border: none;
+  font: $font-small-semi;
+  border-radius: 3px;
+}
+
+.property-invest__btn--watchlist {
+  background-color: #e6e6e6;
+  color: #7c7c7c;
+}
+
+.property-invest__funded {
+    &--progress {
+        width: 100%;
+        height: 7px;
+        border-radius: 50px;
+        background-color: #dfdfdf;
+        margin-right: 2rem;
+    }
+    margin-bottom: 3rem;
+
+    span {
+      color: #656565;
+  }
+}
+
+.propery-invest__roi {
+    h1 {
+        font: $font-small-semi;
+        text-transform: uppercase;
+    }
+
+    p {
+        font: $font-tiny;
+        color: #656565;
+    }
+}
+
+.property-bottom {
+    margin-top: 5rem;
+    width: 70%;
+}
+
+.property-name {
+    font: $font-medium-semi;
+    font-size: 4.5rem;
+    color: #DE6C31;
+    text-transform: capitalize;
+}
+
+.property-location {
+    margin-top: 2rem;
+    font: $font-small;
+    margin-bottom: 3rem;
+}
+
+.property-description {
+    h1 {
+        font: $font-medium-semi;
+    }
+
+    p {
+        width: 60%;
+        font: $font-tiny;
+    }
+}
+
+/**
+**** Modal
+**/
+.invest-modal__top {
+  hr {
+    border: 1px solid #EAEAEA;
+    margin: 3rem 0;
+  }
+}
+
+.invest-modal-box {
+  display: flex;
+  align-items: center;
+}
+
+.invest-modal-imgbox {
+  flex: 0 0 40%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.invest-modal-details {
+  flex: 1;
+  margin-left: 5rem;
+
+  h1 {
+    font: $font-medium-semi;
+    color: $primary-color;
+    text-transform: capitalize;
+    
+  }
+
+  h2 {
+    font: $font-tiny;
+  }
+}
+
+.invest-modal-roi {
+  margin-top: 3rem;
+
+  h1 {
+    font: $font-tiny;
+    color: inherit;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font: $font-tiny-bold;
+  }
+}
+
+.invest-modal__bottom {
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+
+  
+
+  h2 {
+    font: $font-tiny-semi;
+    color: #5D5D5D;
+  }
+
+  input {
+    width: 100%;
+    text-align: center;
+    padding: .5rem;
+    font: $font-tiny-semi;
+    border: 1px solid #D6D6D6;
+    border-radius: 3px;
+  }
+
+  button {
+    margin: 3rem 0;
+  }
+}
+
+.invest-modal__input {
+  &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+}
+
+.invest-modal-grid  {
+  display: flex;
+
+  input {
+    &:first-child {
+      width: 40px;
+      margin-right: 5px;
+    }
+    &:nth-child(2) {
+      width: 40px;
+    }
+    
+    &:last-child {
+      margin-left: 3rem;
+    }
+  }
+}
+
+.invest-modal__success {
+  display: block;
+  &--img {
+    width: 120px;
+    margin: 0 auto;
+    text-align: center;
+
+    img {
+      width: 100%;
+    }
+    // display: block;
+  }
+
+  h1 {
+    display: inline-block;
+    font: $font-medium-semi;
+    margin: 1rem 0;
+  }
+
+  h2 {
+    font: $font-tiny-semi;
+  }
+
+  span {
+    color: #D55C0F;
+  }
+
+}

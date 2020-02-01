@@ -1,0 +1,53 @@
+.about {
+    &__text {
+        padding: 0 136px;
+        margin-bottom: 70px;
+
+        &--name {
+            font: $font-tiny-bold;
+        }
+    
+        &--desc {
+            font: $font-tiny;
+        }
+    }
+}
+
+.about-heading {
+  color: $primary-text-color;
+}
+
+.about-founders__grid {
+    padding: 0 40px;
+}
+
+.about-founders-box {
+    max-width: calc((100% - 2 * #{$gutter-horizontal-big}) / 3);
+}
+
+.about-imgbox {
+    overflow: hidden;
+}
+
+.about__img {
+    width: 167px;
+    height: 167px;
+    border-radius: 100px;
+
+    &--team {
+        width: 144px;
+        height: 144px;
+    }
+}
+
+.about-team__grid {
+    margin-bottom: 64px;
+}
+
+.about-team-box {
+    max-width: calc((100% - 3 * #{$gutter-horizontal-big}) / 4);
+}
+
+.section-hiring {
+    margin-top: 210px;
+}

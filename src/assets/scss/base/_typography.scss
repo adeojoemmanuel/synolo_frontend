@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Graphik"), local("Graphik-Thin"),
+    url(../../fonts/Graphik-100-Thin.otf) format("opentype"),
+}
+
+@font-face {
+    font-family: "Graphik";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Graphik"), local("Graphik-small"),
+      url(../../fonts/Graphik-300-Light.otf) format("opentype"),
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Graphik"), local("Graphik-Regular"),
+    url(../../fonts/Graphik-400-Regular.otf) format("opentype"),
+}
+
+@font-face {
+    font-family: "Graphik";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Graphik Medium"), local("Graphik-Medium"),
+      url(../../fonts/Graphik-500-Medium.otf) format("opentype"),  
+}
+  
+
+@font-face {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Graphik Bold"), local("Graphik-Bold"),
+    url(../../fonts/Graphik-700-Bold.otf) format("opentype"),  
+}
+
+body {
+    font: $font-tiny;
+    color: $primary-text-color;
+    background: $bckgd-color;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.heading-primary {
+  font: $font-medium-bold;
+  letter-spacing: -1.35px;
+  margin-bottom: 60px;
+  color: #fff;
+
+    &--main {
+      font: $font-big;
+      text-transform: capitalize;
+      margin-bottom: 13px;
+    }
+
+    &--sub {
+      font: $font-small;
+      font-weight: 100;
+      margin-bottom: 13px;
+      letter-spacing: initial;
+    }
+}
+
+
+.heading--secondary {
+   font: $font-medium;
+   margin-bottom: 13px;
+   color: $primary-text-color;
+}
+
+.heading-small {
+  font: $font-small-bold;
+  text-transform: uppercase;
+  max-width: 40rem;
+  margin-bottom: 4rem;
+
+  @include responsive(tab-land) {
+    text-align: center;
+  }
+
+  @include responsive(tab-port) {
+    margin: auto;
+    max-width: 80%;
+    margin-bottom: 4rem;
+  }
+
+  @include responsive(phone-port) {
+    max-width: 100%;
+  }
+}

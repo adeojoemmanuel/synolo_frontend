@@ -1,0 +1,28 @@
+.progressbar {
+  background: #5bd700;
+  height: 100%;
+  border-radius: 50px;
+  transition: width 0.3s ease-in;
+}
+
+.investor-overview-progressbar {
+  width: 94px;
+  height: 7px;
+  border-radius: 50px;
+  background-color: #ecf0f7;
+}
+
+.profile-card-progress{
+
+  h3 {
+    font: $font-tiny-semi;
+    margin-top: 5px;
+  }
+}
+
+.profile-card-progressbar {
+  width: 94px;
+  height: 7px;
+  border-radius: 50px;
+  background-color: #ecf0f7;
+}

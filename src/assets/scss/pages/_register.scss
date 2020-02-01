@@ -1,0 +1,281 @@
+.register {
+  background: #f6f8fc;
+  background-size: cover;
+  // min-height: 100vh;
+}
+
+.register-header {
+  background: #ffff;
+  margin-bottom: 60px !important;
+}
+
+.register-section {
+  text-align: center;
+}
+
+.register-heading {
+  color: $primary-text-color;
+  max-width: 60.7rem;
+  margin: 30px auto;
+  font: $font-custom-heading;
+  // margin-top: 30px;
+}
+
+.register-form {
+  max-width: 90%;
+  margin: auto;
+  p {
+    font: $font-small;
+    margin-bottom: 40px;
+  }
+
+  &__code {
+    flex: 0 0 10% !important;
+    position: relative;
+
+    label {
+      width: 100%;
+      left: 0;
+      text-align: left;
+    }
+  }
+
+  .register-form-box {
+    flex: 1;
+    text-align: left;
+    width: 97%;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 1.5rem 1.4rem;
+    border: none;
+    font: $font-tiny-bold;
+    font-size: 1.4rem;
+    outline: none;
+    color: $primary-text-color;
+    border: 2px solid transparent;
+    display: block;
+    border-radius: 5px;
+    transition: all .3s;
+
+    &::-webkit-input-placeholder {
+      color: #8e8e8e;
+      font: $font-tiny;
+      text-transform: capitalize;
+  }
+
+    &:focus {
+      box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.1);
+      border: 2px solid $primary-btn-color;
+    }
+
+    &:focus:invalid {
+      border: 2px solid $primary-color;
+    }
+
+    &--address {
+      padding-bottom: 8rem;
+    }
+  }
+
+  &__label {
+      position: absolute;
+      padding-left: 1.4rem;
+      margin-top: .5rem;
+      font: $font-tiny;
+      font-size: 1rem;
+      text-transform: capitalize;
+      color: #8e8e8e;
+      transition: all .3s;
+      transform: translateY( -6.5rem);
+  }
+  
+  &__input:placeholder-shown + &__label{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY( -4rem);
+  }
+
+  &__input--address + &__label {
+    transform: translateY( -13rem);
+  }
+
+  input[type="date"] {
+  &::-webkit-datetime-edit-fields-wrapper {
+    color: $primary-text-color;
+    font: $font-tiny-bold;
+  }
+  &::-webkit-inner-spin-button { display: none; }
+}
+
+
+}
+
+.register-form--3 {
+  max-width: 50%;
+}
+.register-form--4 {
+  min-height: 50vh;
+}
+
+.register-form__reset {
+  margin-bottom: 0rem !important;
+}
+
+.register-card {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  background-color: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+
+  &.active {
+    border-color:  $primary-color;
+    border-radius: 5px;
+  }
+}
+
+.register-generic {
+  input {
+    display: none;
+  }
+} 
+
+.register-card-box {
+  margin-left: 40px;
+  &--header {
+    font: $font-small-bold;
+  }
+
+  p {
+    font: $font-tiny;
+    margin-bottom: 0;
+  }
+}
+
+.register-footer {
+  // position: fixed;
+  
+  // padding-right:0 10rem;
+  margin: 4rem 10rem;
+  margin-left: 7rem;
+  margin-bottom: 0rem;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+
+  &-btn--proceed {
+    width: 12rem;
+  }
+
+  &-btn--back {
+    visibility: hidden;
+  }
+}
+
+.register-investment {
+  &-label {
+    text-align: left;
+    display: block;
+    font: $font-tiny-bold;
+  }
+
+  &-amount {
+    display: block;
+      font: $font-tiny-bold;
+      // height: 100%;
+      padding: 1.7rem 1.4rem 1.7rem 1.2rem;
+      width: 100%;
+      max-width: 100%; 
+      box-sizing: border-box;
+      margin: 0;
+      border: 0;
+      color: $primary-text-color;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      background-color: #fff;
+      background-repeat: no-repeat, repeat;
+      background-position: right .7em top 50%, 0 0;
+      background-size: .65em auto, 100%;
+  
+      &::-ms-expand {
+        display: none;
+    }
+    &:hover {
+        border-color: #888;
+    }
+    &:focus {
+        border-color: #aaa;
+        box-shadow: 0 0 1px 2px $primary-color;
+        box-shadow: 0 0 0 3px -moz-mac-focusing;
+        outline: none;
+    }
+    & option {
+        font-weight:normal;
+    }
+  
+    &--icon {
+      position: absolute;
+      top: 45.5%;
+      left: 45%;
+      width: 10px;
+    }
+  }
+
+  &-form__radio {
+    &-group {
+      text-align: left;
+    }
+
+    &-label {
+      color: #7c7c7c;
+      font: $font-tiny-bold;
+      cursor: pointer;
+      position: relative;
+      padding-left: 3rem;
+    }
+
+    &-button {
+      position: absolute;
+      display: inline-block;
+      height: 2rem;
+      width: 2rem;
+      border: 2px solid #e6e6e6;
+      border-radius: 50%;
+      left: 0;
+      top: -4px;
+
+      &::after {
+        content: "";
+        display: block;
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+        position: absolute;
+        background-color: $primary-color;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity .2s;
+      }
+    }
+
+    &-input {
+      display: none;
+    }
+
+    
+    &-input:checked + &-label &-button:after {
+      opacity: 1;
+    }
+  }
+}
+
+.register-form-4--btn {
+  margin: 3rem 0;
+}
+

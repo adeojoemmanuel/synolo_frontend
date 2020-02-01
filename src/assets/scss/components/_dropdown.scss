@@ -1,0 +1,32 @@
+.dropdown {
+    ul {
+        position: absolute;
+        background:  rgba(0, 0, 0, 0.3);
+        padding: 5px 20px;
+        border-radius: 2px;
+        width: 160px;
+        text-align: center;
+        overflow: scroll;
+        margin-left: -10px;
+
+        .dropdown-list {
+            text-decoration: none;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            margin-bottom: 3px;
+            display: block;
+            width: 100%;
+            text-align: center;
+            background: transparent;
+            color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            font: $font-tiny;
+
+            &:hover,
+            &:focus {
+                color: $primary-color;
+                border-color: $primary-color;
+            }
+        }
+    }
+}

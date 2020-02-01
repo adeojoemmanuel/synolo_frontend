@@ -1,0 +1,45 @@
+.modal-overlay {
+  z-index: 98;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: .2s;
+}
+
+.modal-box {
+  z-index: 99;
+  position: absolute;
+  top: 10%;
+  width: 600px;
+  min-height: 300px;
+  overflow: scroll;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 20px 35px rgba(0, 50, 95, 0.1);
+  border-radius: 5px;
+  transition: .2s;
+  animation-name: animatetop;
+  animation-duration: 0.2s;
+
+  img {
+      width: 20px;
+      float: right;
+      margin: 10px;
+    //   padding: 1rem;
+  }
+}
+
+.modal {
+  padding: 20px 24px;
+  min-height: 500px;
+  border-radius: 4px;
+  transition: .2s;
+}

@@ -1,0 +1,56 @@
+html {
+
+  font-size: 62.5%; //1rem = 10px;
+
+  @include responsive(big-desktop) {
+      font-size: 75%; //1rem =  12px;
+  }
+
+  @include responsive(tab-land) {
+    font-size: 56.25%; //1rem = 9px;
+  }
+
+  @include responsive(phone-land) {
+    font-size: 50%; //1rem = 8px;
+  }
+
+  @include responsive(phone-port) {
+    font-size: 43.75%; // 1rem = 7px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+a, 
+a:active,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+a:focus {
+  color: $primary-color;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}

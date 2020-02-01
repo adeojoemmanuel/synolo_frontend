@@ -1,0 +1,33 @@
+.nav-dot {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-dot-box {
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: #ededed;
+  transition: all .3s;
+}
+
+.dot-line {
+  border: 2px solid #ededed;
+  width: 150px;
+  transition: all .3s;
+}
+
+.nav-active {
+    .dot {
+      background-color: #d55b0f;
+    }
+
+    .dot-line {
+      border-color: #d55b0f;
+    }
+}

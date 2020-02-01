@@ -1,0 +1,142 @@
+.investor-overview {
+    &-heading {
+        font: $font-small;
+        font-weight: 400;
+        padding: 2rem;
+        border-bottom: 2px solid #eaeaea81;
+    }
+
+    margin-bottom: 3rem;
+}
+
+.investor-overview__top {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.investor-overview__top-box {
+    display: flex;
+}
+
+.investor-overview--portfolio {
+    flex: 0 0 65%;
+    padding-left: 2rem;
+    padding-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    padding-right: 2rem;
+}
+
+.investor-overview--investments {
+    flex: 1;
+}
+
+.investor-overview-details {
+    flex: 1 0 50%;
+    padding: 1rem;
+    padding-left: 3rem;
+    text-align: left;
+    
+    h3 {
+        font: $font-small-semi;
+        color: #6E6E6E;
+    }
+
+    h1 {
+        font: $font-medium-bold;
+        font-size: 3.2rem;
+        font-weight: 400;
+    }
+
+    &:first-child {
+        border-right: 2px solid #eaeaea81;
+        border-bottom: 2px solid #eaeaea81;
+    }
+
+    &:nth-child(2) {
+        border-bottom: 2px solid #eaeaea81;
+    }
+
+    &:nth-child(3) {
+        border-right: 2px solid #eaeaea81;
+    }
+}
+
+.investor-overview--investments-box {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.investment-overview__imgbox {
+    margin-right: 2rem;
+}
+
+.investor-overview-progress {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.investor-overview-progressbar {
+   margin-right: 1rem;
+}
+
+.investor-overview--investments {
+    border-left: 2px solid #eaeaea81;
+    padding: 1rem;
+
+    h2 {
+        font: $font-small-bold;
+        margin-bottom: 1rem;
+    }
+    
+}
+
+.investment-overview--img {
+    width: 50px;
+    height: 44px;
+    border-radius: 5px;
+}
+
+.investor-overview__detailsbox {
+    margin-right: 1rem;
+    padding-right: 1rem;
+    border-right: 2px solid #eaeaea81;
+    h3 {
+        font: $font-tiny-semi;
+    }
+}
+
+.investor-overview-roi {
+    font: $font-tiny-semi !important;
+    margin-bottom: 0 !important;
+}
+
+.investor-overview__bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.investor-overview__card {
+    border-radius: 5px;
+    background-color: #F9FBFE;
+    min-width: 40rem;
+    // flex: 0 0 40rem;
+
+    &--header {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background-color: #fff;
+        padding: 2rem 2rem;
+        font: $font-small-semi;
+    }
+
+    &--body {
+        padding: 2rem 2rem;
+    }
+}
